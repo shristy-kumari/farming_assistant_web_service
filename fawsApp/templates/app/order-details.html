@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+                           
+    <!-- Navigation End -->
+    <!-- Inner-Intro -->
+    <div id="inner_header_about" class="section-padding herrer-breadcrumbs">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="inner_intro">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'shop_page' %}">Buy Seeds</a></li>
+                        <li class="breadcrumb-item active">Order Details</li>
+                    </ul>
+                </nav>
+                <h1 class="no-margin">Order Details</h1>
+            </div>
+        </div>
+    </div>
+    <!-- tracking map -->
+    <section class="checkout-page section-padding bg-light-theme">
+        <div class="container">
+            <div class="tracking-sec">
+                <div class="tracking-details padding-30 p-relative">
+                    <h2 class="text-light-black fw-600">Kashmir malana</h2>
+                    <span class="text-light-white">Estimated Delivery time</span>
+                    <span class="text-light-black fw-700 d-block">9:00pm-9:10pm</span>
+                    <div id="add-listing-tab" class="step-app mt-20">
+                        <ul class="step-steps">
+                            <li class="done">
+                                <a href="javascript:void(0)"> <span class="number"></span>
+                                    <span class="step-name">Order sent<br>8:38pm</span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="javascript:void(0)"> <span class="number"></span>
+                                    <span class="step-name">In the works</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> <span class="number"></span>
+                                    <span class="step-name">Out of delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)"> <span class="number"></span>
+                                    <span class="step-name">Delivered</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <button type="button" class="fullpageview text-light-black fw-600" data-modal="modal-12">Full Page View</button>
+                    </div>
+                </div>
+                <div class="tracking-map">
+                    <div id="pickupmap"></div>
+                </div>
+            </div>
+            <!-- recipt -->
+            
+            <div class="row">
+                <div class="col-md-8 recipt-sec padding-30 mb-xl-30">
+                    <h3>Your Orders: {{cart_data.total_cart}}</h3>
+                    <div class="table-responsive table-striped">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Qunantity</th>
+                                    <th>Total</th>
+                                    <th class="remove-item">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for cart in cart_data.cart %}
+                                <tr>
+                                    <td data-title="Product">
+                                        <div class="cart-product">
+                                            <img src="{{cart.Product.Image.url}}" style="height: 30px;" alt="prod1">
+                                            <div class="cart-product-body">
+                                                <h6> <a href="#">{{cart.Product.Name}}</a></h6>
+                                                <p>{{cart.Product.Unit}}</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td data-title="Price"> <strong><i class="fa fa-rupee-sign"></i> {{cart.Product.Price}}</strong> </td>
+                                    <td class="quantity" data-title="Quantity">
+                                        <form method="POST" action="{% url 'update_cart' pk=cart.pk %}" onchange="this.submit();">
+                                            {% csrf_token %}
+                                            <input type="number" name="qty" min="1" max="10" class="qty form-control" value="{{cart.Quantity}}">
+                                        </form>
+                                    </td>
+                                    <td data-title="Total">
+                                        <strong><i class="fa fa-rupee-sign"></i> {{cart.Total}}</strong>
+                                    </td>
+                                    <td class="remove text-center">
+                                        <a href="{% url 'delete_cart' pk=cart.id %}" class="text-dark-white text-danger h5"> <i class="far fa-trash-alt"></i> </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="recipt-sec padding-30 mb-0">
+                        <h3>Cart Total</h3>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <td><i class="fa fa-rupee-sign"></i> {{cart_data.total_cart_amount}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Tax</th>
+                                        <td><i class="fa fa-rupee-sign"></i> {{cart_data.tax}} <span class="small">(18%)</span> </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td> <b><i class="fa fa-rupee-sign"></i> {{cart_data.final_amount}}</b> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <form action="{% url 'pay' %}" method="POST" >
+                                {% csrf_token %}
+                                <input type="hidden" name="amount" value="{{cart_data.final_amount}}" >
+                                <button type="submit" class="btn-second btn-submit full-width">Pay {{cart_data.final_amount}}</button>
+                                <!-- <a href="#" class="btn-second btn-submit full-width">Pay {{cart_data.final_amount}}</a> -->
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tracking map -->
+   {% endblock %}

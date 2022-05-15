@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Inner-Intro -->
+<div id="inner_header_about" class="section-padding herrer-breadcrumbs">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="inner_intro">
+            <nav class="breadcrumb">
+                <ul>
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+
+                    <li class="breadcrumb-item active">Buy Seeds</li>
+
+                </ul>
+            </nav>
+            <h1 class="no-margin">Buy Seeds</h1>
+        </div>
+    </div>
+</div>
+<!-- Starts Shop-left -->
+
+<div class="col-lg-12">
+    <div class="product-gallery-wrapper">
+        <div class="product-advertisement">
+            <div class="row">
+                
+                    <div class="banner-adv2 mb-xl-30">
+                        <img src="{% static '/img/farms/1110x100/vbanner-2.jpg ' %}" class="img-fluid full-width"
+                            alt="banner">
+                        <span class="text">Unlimited Free Delivery with. <a href="#" class="btn-second btn-submit">Try
+                                30 Days FREE</a> </span>
+                        <span class="close-banner"></span>
+                        <div class="overlay overlay-bg"></div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="row">
+    {% for i in all_products %}
+    <div class="col-md-3">
+        <div class="product-box mb-xl-30">
+            <div class="product-img">
+                <a href="#">
+                    <img src="{{ i.Image.url }}" class="img-fluid full-width" alt="product-img">
+                </a>
+                <div class="overlay">
+                    <div class="product-tags padding-10"> <span class="circle-tag">
+                        </span>
+                        <div class="custom-tag"> <span class="text-custom-white rectangle-tag">
+                                15% Off
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-caption">
+                <span class="product-strain sativa" data-toggle="tooltip" title="Seeds"></span>
+                <p class="text-light-white">25% C&DC - 0.1% COD</p>
+                <div class="product-title">
+                    <h8 class="card-title">{{ i.Categories }}</h8>
+                    <h6 class="card-title">{{ i.Name }}</h6>
+                    <span class="card-text">Price - {{ i.Price }}
+                        <span class="card-text">- ({{ i.Unit }})</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="product-footer">
+                <a href="{% url 'add_to_cart' pk=i.id %}" class="btn-second btn-submit full-width btn-sm">Add to
+                    Cart</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+
+
+
+
+<div class="custom-pagination d-none">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+
+
+<!-- Ends Shop-left -->
+{% endblock %}

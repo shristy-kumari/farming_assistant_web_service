@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="#">
+    <meta name="description" content="#">
+    <title>Farming Assistant</title>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+    <link rel="apple-touch-icon-precomposed" href="#">
+    <link rel="shortcut icon" href="#">
+
+
+    <!-- Bootstrap -->
+    <link href="{% static '/css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link href="{% static '/css/font-awesome.css'%}" rel="stylesheet">
+    <!-- Flaticons -->
+    <link href="{% static '/css/font/flaticon.css' %}" rel="stylesheet">
+    <!-- Swiper Slider -->
+    <link href="{% static '/css/swiper.min.css' %}" rel="stylesheet">
+    <!-- Slick Slider -->
+    <link href="{% static '/css/slick.css' %}" rel="stylesheet">
+    <!-- Range Slider -->
+    <link href="{% static '/css/ion.rangeSlider.min.css'%}" rel="stylesheet">
+    <!-- magnific popup -->
+    <link href="{% static '/css/magnific-popup.css' %}" rel="stylesheet">
+    <!-- Animate css -->
+    <link href="{% static '/css/animate.css' %}" rel="stylesheet">
+    <!-- Nice Select -->
+    <link href="{% static '/css/nice-select.css' %}" rel="stylesheet">
+    <!-- Pogo Slider -->
+    <link href="{% static '/css/pogo-slider.css' %}" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="{% static '/css/style.css'%}" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="{% static '/css/file.css'%}" rel="stylesheet">
+    <!-- Custom Responsive -->
+    <link href="{% static  '/css/responsive.css'%}" rel="stylesheet">
+    <!-- place -->
+
+</head>
+
+<body>
+    <!-- LOAD PAGE -->
+    <div class="animationload">
+        <div class="loader"></div>
+    </div>
+
+    {% block display_msg %}
+    {% endblock %}
+
+    <!-- Navigation Start -->
+    <div class="header">
+        <header class="full-width">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mainNavCol">
+                        <!-- logo -->
+                        <div class="logo mainNavCol">
+                            <a href="index.html">
+                                <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo">
+                            </a>
+                        </div>
+                        <!-- logo -->
+                        <div class="main-search mainNavCol">
+                            <form class="main-search search-form full-width">
+                                <div class="row">
+                                    <!-- search -->
+                                    <div class="col-lg-12">
+                                        <div class="search-box">
+                                            <input type="text" class="form-control"
+                                                placeholder=" Search your All seeds Product & chemical fertilizers">
+                                        </div>
+                                    </div>
+                                    <!-- search -->
+                                </div>
+                            </form>
+                        </div>
+                        <div class="right-side mainNavCol">
+                            <div class="catring parent-megamenu d-none">
+                                <a href="#"> <span>Pages <i class="fas fa-caret-down"></i></span>
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                                <div class="megamenu">
+                                    <div class="row">
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Cannabis</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">All</a>
+                                                    </li>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">Strains</a>
+                                                    </li>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">Oil</a>
+                                                    </li>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">Capsules</a>
+                                                    </li>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">Prerolls</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Cannabis 2.0</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="shop-left.html"
+                                                            class="text-light-white fw-500">Edibles</a>
+                                                    </li>
+                                                    <li><a href="shop-left.html"
+                                                            class="text-light-white fw-500">Extract</a>
+                                                    </li>
+                                                    <li><a href="shop-left.html"
+                                                            class="text-light-white fw-500">Beverages</a>
+                                                    </li>
+                                                    <li><a href="shop-left.html" class="text-light-white fw-500">Vapes
+                                                            <span class="badge badge-warning">New</span></a>
+                                                    </li>
+                                                    <li><a href="shop-left.html"
+                                                            class="text-light-white fw-500">Topicals</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Home Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li class="active"><a href="index.html"
+                                                            class="text-light-white fw-500">Landing Page</a>
+                                                    </li>
+                                                    <li><a href="homepage-1.html" class="text-light-white fw-500">Home
+                                                            Page 1 <span class="badge badge-danger">Hot</span></a>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Vendor Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="vendor.html" class="text-light-white fw-500">Vendor
+                                                            <span class="badge badge-danger">Hot</span> </a></li>
+                                                    <li><a href="vendor-style-1.html"
+                                                            class="text-light-white fw-500">Vendor Style 1</a>
+                                                    </li>
+                                                    <li><a href="vendor-style-2.html"
+                                                            class="text-light-white fw-500">Vendor Style 2</a>
+                                                    </li>
+                                                    <li><a href="add-vendor.html" class="text-light-white fw-500">Add
+                                                            Vendor</a>
+                                                    </li>
+                                                    <li><a href="list-view.html" class="text-light-white fw-500">Vendor
+                                                            List View</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Inner Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="ex-deals.html" class="text-light-white fw-500">Ex
+                                                            Deals</a>
+                                                    </li>
+                                                    <li><a href="about.html" class="text-light-white fw-500">About
+                                                            Us</a>
+                                                    </li>
+                                                    <li><a href="reviews.html"
+                                                            class="text-light-white fw-500">Reviews</a>
+                                                    </li>
+                                                    <li><a href="checkout.html"
+                                                            class="text-light-white fw-500">Checkout</a>
+                                                    </li>
+                                                    <li><a href="order-details.html"
+                                                            class="text-light-white fw-500">Order Details</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Listing Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="listing-archive-full.html"
+                                                            class="text-light-white fw-500">Listing Archive</a>
+                                                    </li>
+                                                    <li><a href="listing-archive-left.html"
+                                                            class="text-light-white fw-500">Archive Left Sidebar</a>
+                                                    </li>
+                                                    <li><a href="listing-archive-right.html"
+                                                            class="text-light-white fw-500">Archive Right Sidebar</a>
+                                                    </li>
+                                                    <li><a href="listing-detail.html"
+                                                            class="text-light-white fw-500">Listing Detail</a>
+                                                    </li>
+                                                    <li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Shop Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="shop-left.html" class="text-light-white fw-500">Shop
+                                                            Left Sidebar</a>
+                                                    </li>
+                                                    <li><a href="shop-right.html" class="text-light-white fw-500">Shop
+                                                            Right Sidebar</a>
+                                                    </li>
+                                                    <li><a href="shop-full-width.html"
+                                                            class="text-light-white fw-500">Shop Full Width</a>
+                                                    </li>
+                                                    <li><a href="product-details.html"
+                                                            class="text-light-white fw-500">Shop Detail</a>
+                                                    </li>
+                                                    <li><a href="vendor-map.html" class="text-light-white fw-500">Vendor
+                                                            Shop Map</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Additional Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="login.html" class="text-light-white fw-500">Login</a>
+                                                    </li>
+                                                    <li><a href="register.html"
+                                                            class="text-light-white fw-500">Sign-up</a>
+                                                    </li>
+                                                    <li><a href="geo-locator.html" class="text-light-white fw-500">Geo
+                                                            Locator</a>
+                                                    </li>
+                                                    <li><a href="comparison.html"
+                                                            class="text-light-white fw-500">Comparison</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg col-md-3">
+                                            <div class="menu-style">
+                                                <div class="menu-title">
+                                                    <h6 class="cat-name">Blog Pages</h6>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="blog.html" class="text-light-white fw-500">Blog Grid
+                                                            View</a>
+                                                    </li>
+                                                    <li><a href="blog-style-2.html" class="text-light-white fw-500">Blog
+                                                            Grid View 2</a>
+                                                    </li>
+                                                    <li><a href="blog-details.html" class="text-light-white fw-500">Blog
+                                                            Details</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile search -->
+                            <div class="mobile-search">
+                                <a class="custom-svg" href="#" data-toggle="modal" data-target="#search-box">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 310.42 310.42" xml:space="preserve">
+                                        <path d="M273.587,214.965c49.11-49.111,49.109-129.021,0-178.132c-49.111-49.111-129.02-49.111-178.13,0
+            C53.793,78.497,47.483,140.462,76.51,188.85c0,0,2.085,3.498-0.731,6.312c-16.065,16.064-64.263,64.263-64.263,64.263
+            c-12.791,12.79-15.836,30.675-4.493,42.02l1.953,1.951c11.343,11.345,29.229,8.301,42.019-4.49c0,0,48.096-48.097,64.128-64.128
+            c2.951-2.951,6.448-0.866,6.448-0.866C169.958,262.938,231.923,256.629,273.587,214.965z M118.711,191.71
+            c-36.288-36.288-36.287-95.332,0.001-131.62c36.288-36.287,95.332-36.288,131.619,0c36.288,36.287,36.288,95.332,0,131.62
+            C214.043,227.996,155,227.996,118.711,191.71z"></path>
+                                        <path opacity="0.4" d="M126.75,118.424c-1.689,0-3.406-0.332-5.061-1.031c-6.611-2.798-9.704-10.426-6.906-17.038
+            c17.586-41.559,65.703-61.062,107.261-43.476c6.611,2.798,9.704,10.426,6.906,17.038c-2.799,6.612-10.425,9.703-17.039,6.906
+            c-28.354-11.998-61.186,1.309-73.183,29.663C136.629,115.445,131.815,118.424,126.75,118.424z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- mobile search -->
+                            <!-- user account -->
+                            <div class="user-details p-relative">
+                                <a href="#" class="text-light-white fw-500">
+                                    <img src="{% static 'img/user-1.png' %}" class="rounded-circle" alt="userimg">
+                                    <span>{% if request.session.email %}{{user_role}}{% else %}My{% endif %} Account</a>
+                                <div class="user-dropdown">
+                                    {% if request.session.email %}
+
+
+                                    <ul>
+                                        {% if user_role == 'farmer' %}
+                                        <li>
+                                            <a title="Past Orders" href="{% url 'shop_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 384 384" xml:space="preserve">
+                                                            <path d="M279.992,55.664c-7.656-4.424-17.44-1.792-21.848,5.864c-4.416,7.656-1.792,17.44,5.864,21.856
+                                C308.416,109,336,156.752,336,208c0,79.4-64.6,144-144,144S48,287.4,48,208c0-51.248,27.584-99,71.992-124.624
+                                c7.656-4.416,10.28-14.2,5.864-21.856s-14.208-10.288-21.848-5.864C49.72,86.976,16,145.352,16,208c0,97.048,78.952,176,176,176
+                                s176-78.952,176-176C368,145.352,334.28,86.976,279.992,55.664z"></path>
+                                                            <path opacity="0.4" d="M288,192h-80V16c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v192c0,8.832,7.168,16,16,16h96c8.832,0,16-7.168,16-16
+                                C304,199.168,296.832,192,288,192z"></path>
+                                                            <path opacity="0.4" d="M192,296c-48.52,0-88-39.48-88-88c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16c0,66.168,53.832,120,120,120
+                                c8.832,0,16-7.168,16-16C208,303.168,200.832,296,192,296z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Buy Seeds</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Upcoming Orders" href="{% url 'order_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 512 512">
+                                                            <path d="M363.871,161.034C361.337,138.212,342.118,120,319.149,120H301v-15C301,47.109,253.891,0,196,0S91,47.109,91,105v15
+                                  H72.851c-22.969,0-42.188,18.212-44.722,41.034L0.293,403.558C0.088,405.242,0,406.971,0,408.655V437c0,24.814,20.186,45,45,45
+                                  h137.518c-0.989-4.849-1.518-9.864-1.518-15V287c0-24.814,20.186-45,45-45h146.759L363.871,161.034z M271,120H121v-15
+                                  c0-41.353,33.647-75,75-75c41.353,0,75,33.647,75,75V120z"></path>
+                                                            <path opacity="0.4" d="M497,272H226c-8.291,0-15,6.709-15,15v180c0,24.814,20.186,45,45,45h211c24.814,0,45-20.186,45-45V287
+                                  C512,278.709,505.291,272,497,272z M451,347h-15v15c0,41.353-33.647,75-75,75c-41.353,0-75-33.647-75-75v-15h-15
+                                  c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h60c8.291,0,15,6.709,15,15c0,8.291-6.709,15-15,15h-15v15
+                                  c0,24.814,20.186,45,45,45c24.814,0,45-20.186,45-45v-15h-15c-8.291,0-15-6.709-15-15c0-8.291,6.709-15,15-15h60
+                                  c8.291,0,16,6.709,16,15C467,340.291,459.291,347,451,347z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Orders</span>
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                        <li>
+
+                                            <a title="Saved" href="{% url 'saved_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg viewBox="0 -22 412.28002 412"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="m409.777344 191.703125-40.128906-87.976563c-8.816407-19.25-28.03125-31.605468-49.203126-31.636718h-25.554687c-5.519531 0-10 4.476562-10 10 0 5.523437 4.480469 10 10 10h25.558594c13.339843.023437 25.445312 7.808594 31 19.9375l34.796875 76.296875h-89.019532c-3.898437
+                            0-7.445312 2.269531-9.078124 5.8125l-17.242188 37.351562c-5.585938 12.054688-17.652344 19.777344-30.9375 19.800781h-69.515625c-13.285156-.023437-25.347656-7.746093-30.9375-19.800781l-17.238281-37.351562c-1.636719-3.542969-5.179688-5.8125-9.082032-5.8125h-85.894531l42.15625-78.304688c5.933594-11.046875
+                            17.460938-17.933593 30-17.925781h17.925781c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10h-17.921874c-19.902344-.015625-38.195313 10.914062-47.613282 28.445312l-48.746094 90.542969c-1.984374 1.886719-3.10546825 4.503907-3.101562 7.238281 0 .175782 0
+                            .351563.015625.523438-.01171875.171875-.015625.347656-.015625.519531v92.660157c.046875 42.019531 34.097656 76.070312 76.113281 76.117187h260.050781c42.019532-.046875 76.070313-34.097656 76.117188-76.113281v-92.664063c0-.171875 0-.347656-.015625-.519531.007813-.171875.015625-.347656.015625-.523438.003906-2.4375-.886719-4.792968-2.503906-6.617187zm0 0">
+                                                            </path>
+                                                            <path opacity="0.4"
+                                                                d="m145.074219 122.558594 54.777343 44.308594c3.691407 2.988281 8.972657 2.96875 12.636719-.046876l53.917969-44.308593c4.265625-3.507813 4.882812-9.808594 1.375-14.078125-3.507812-4.265625-9.808594-4.882813-14.078125-1.375l-37.5625 30.875v-127.792969c0-5.523437-4.476563-10-10-10s-10
+                            4.476563-10 10v128l-38.488281-31.128906c-2.769532-2.296875-6.5625-2.925781-9.929688-1.648438-3.367187 1.277344-5.785156 4.269531-6.332031 7.828125s.859375 7.136719 3.683594 9.367188zm0 0">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Saved</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a title="About" href="{% url 'about' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.4"
+                                                                d="m256 420.74 69.423-215.981h-138.846z"></path>
+                                                            <path opacity="0.4"
+                                                                d="m356.934 204.759-87.584 272.482 239.703-272.482z">
+                                                            </path>
+                                                            <path opacity="0.4"
+                                                                d="m155.066 204.759h-152.119l239.702 272.482z"></path>
+                                                            <path d="m512 174.759-59.044-123.638-79.481 123.638z">
+                                                            </path>
+                                                            <path d="m84.189 34.759 81.811 127.261 81.811-127.261z">
+                                                            </path>
+                                                            <path d="m264.189 34.759 81.811 127.261 81.811-127.261z">
+                                                            </path>
+                                                            <path d="m193.475 174.759h125.05l-62.525-97.261z"></path>
+                                                            <path d="m59.044 51.121-59.044 123.638h138.525z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">About</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Account" href="{% url 'profile_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg viewBox="-42 0 512 512.002"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path opacity="0.4"
+                                                                d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0">
+                                                            </path>
+                                                            <path
+                                                                d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Account</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="contact" href="{% url 'contact' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 23.625 23.625" xml:space="preserve">
+                                                            <path d="M11.812,0C5.289,0,0,5.289,0,11.812s5.289,11.813,11.812,11.813s11.813-5.29,11.813-11.813
+                            S18.335,0,11.812,0z M14.271,18.307c-0.608,0.24-1.092,0.422-1.455,0.548c-0.362,0.126-0.783,0.189-1.262,0.189
+                            c-0.736,0-1.309-0.18-1.717-0.539s-0.611-0.814-0.611-1.367c0-0.215,0.015-0.435,0.045-0.659c0.031-0.224,0.08-0.476,0.147-0.759
+                            l0.761-2.688c0.067-0.258,0.125-0.503,0.171-0.731c0.046-0.23,0.068-0.441,0.068-0.633c0-0.342-0.071-0.582-0.212-0.717
+                            c-0.143-0.135-0.412-0.201-0.813-0.201c-0.196,0-0.398,0.029-0.605,0.09c-0.205,0.063-0.383,0.12-0.529,0.176l0.201-0.828
+                            c0.498-0.203,0.975-0.377,1.43-0.521c0.455-0.146,0.885-0.218,1.29-0.218c0.731,0,1.295,0.178,1.692,0.53
+                            c0.395,0.353,0.594,0.812,0.594,1.376c0,0.117-0.014,0.323-0.041,0.617c-0.027,0.295-0.078,0.564-0.152,0.811l-0.757,2.68
+                            c-0.062,0.215-0.117,0.461-0.167,0.736c-0.049,0.275-0.073,0.485-0.073,0.626c0,0.356,0.079,0.599,0.239,0.728
+                            c0.158,0.129,0.435,0.194,0.827,0.194c0.185,0,0.392-0.033,0.626-0.097c0.232-0.064,0.4-0.121,0.506-0.17L14.271,18.307z
+                             M14.137,7.429c-0.353,0.328-0.778,0.492-1.275,0.492c-0.496,0-0.924-0.164-1.28-0.492c-0.354-0.328-0.533-0.727-0.533-1.193
+                            c0-0.465,0.18-0.865,0.533-1.196c0.356-0.332,0.784-0.497,1.28-0.497c0.497,0,0.923,0.165,1.275,0.497
+                            c0.353,0.331,0.53,0.731,0.53,1.196C14.667,6.703,14.49,7.101,14.137,7.429z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Contact</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="user-footer"> <span class="text-light-black"></span> <a
+                                            href="{% url 'signout' %}">Sign Out</a>
+                                    </div>
+                                    {% else %}
+                                    <ul>
+                                        <li>
+                                            <a title="Register" href="{% url 'register_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 384 384" xml:space="preserve">
+                                                            <path d="M279.992,55.664c-7.656-4.424-17.44-1.792-21.848,5.864c-4.416,7.656-1.792,17.44,5.864,21.856
+                                C308.416,109,336,156.752,336,208c0,79.4-64.6,144-144,144S48,287.4,48,208c0-51.248,27.584-99,71.992-124.624
+                                c7.656-4.416,10.28-14.2,5.864-21.856s-14.208-10.288-21.848-5.864C49.72,86.976,16,145.352,16,208c0,97.048,78.952,176,176,176
+                                s176-78.952,176-176C368,145.352,334.28,86.976,279.992,55.664z"></path>
+                                                            <path opacity="0.4" d="M288,192h-80V16c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v192c0,8.832,7.168,16,16,16h96c8.832,0,16-7.168,16-16
+                                C304,199.168,296.832,192,288,192z"></path>
+                                                            <path opacity="0.4" d="M192,296c-48.52,0-88-39.48-88-88c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16c0,66.168,53.832,120,120,120
+                                c8.832,0,16-7.168,16-16C208,303.168,200.832,296,192,296z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Register</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Login" href="{% url 'login_page' %}">
+                                                <div class="icon">
+                                                    <div class="custom-svg svg-lg">
+                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 0 384 384" xml:space="preserve">
+                                                            <path d="M279.992,55.664c-7.656-4.424-17.44-1.792-21.848,5.864c-4.416,7.656-1.792,17.44,5.864,21.856
+                                C308.416,109,336,156.752,336,208c0,79.4-64.6,144-144,144S48,287.4,48,208c0-51.248,27.584-99,71.992-124.624
+                                c7.656-4.416,10.28-14.2,5.864-21.856s-14.208-10.288-21.848-5.864C49.72,86.976,16,145.352,16,208c0,97.048,78.952,176,176,176
+                                s176-78.952,176-176C368,145.352,334.28,86.976,279.992,55.664z"></path>
+                                                            <path opacity="0.4" d="M288,192h-80V16c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16v192c0,8.832,7.168,16,16,16h96c8.832,0,16-7.168,16-16
+                                C304,199.168,296.832,192,288,192z"></path>
+                                                            <path opacity="0.4" d="M192,296c-48.52,0-88-39.48-88-88c0-8.832-7.168-16-16-16c-8.832,0-16,7.168-16,16c0,66.168,53.832,120,120,120
+                                c8.832,0,16-7.168,16-16C208,303.168,200.832,296,192,296z"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <span class="details">Login</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="user-footer"> <span class="text-light-black"></span> <a
+                                            href="{% url 'index' %}">Home</a>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- mobile search -->
+                            <!-- user notification -->
+                            {% if user_role == 'farmer' %}
+                            <div class="cart-btn notification-btn">
+
+
+                                <a href="#" class="text-light-green fw-700">
+                                    <div class="custom-svg">
+                                        <svg viewBox="-21 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4"
+                                                d="m213.34375 512c38.636719 0 70.957031-27.542969 78.378906-64h-156.757812c7.425781 36.457031 39.746094 64 78.378906 64zm0 0">
+                                            </path>
+                                            <path
+                                                d="m362.933594 255.980469c-.085938 0-.171875.019531-.257813.019531-82.324219 0-149.332031-66.988281-149.332031-149.332031 0-22.636719 5.207031-44.035157 14.273438-63.277344-4.695313-.445313-9.453126-.722656-14.273438-.722656-82.472656 0-149.332031 66.855469-149.332031
+                      149.332031v59.476562c0 42.21875-18.496094 82.070313-50.945313 109.503907-10.816406 9.238281-15.617187 23.957031-11.734375 38.316406 4.523438 16.703125 21.035157 27.371094 38.359375 27.371094h347.199219c18.175781 0 35.308594-11.777344
+                      38.996094-29.589844 2.859375-13.78125-2.046875-27.542969-12.734375-36.523437-31.019532-26.003907-48.960938-64.214844-50.21875-104.574219zm0 0">
+                                            </path>
+                                            <path opacity="0.4"
+                                                d="m469.34375 106.667969c0 58.910156-47.753906 106.664062-106.667969 106.664062-58.910156 0-106.664062-47.753906-106.664062-106.664062 0-58.910157 47.753906-106.667969 106.664062-106.667969 58.914063 0 106.667969 47.757812 106.667969 106.667969zm0 0">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span class="user-alert-notification"></span>
+                                </a>
+                              
+                                <div class="notification-dropdown">
+
+
+                                    <div class="product-detail">
+                                        <a href="#">
+                                            <div class="img-box">
+                                                <img src="{% static 'img/shop-1.png' %}" class="rounded" alt="image">
+                                            </div>
+                                            <div class="product-about">
+                                                <h6 class="text-light-black">Little Ghost</h6>
+                                                <p class="text-light-white">Spicy Maxican Grill</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="rating-box">
+                                        <p class="text-light-black">How was your last order ?.</p>
+                                        <div class="rating-module">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <cite class="text-light-white">Ordered 2 days ago</cite>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user notification -->
+                            <!-- user cart -->
+                            <div class="cart-btn cart-dropdown">
+
+
+                                <a href="#" class="text-light-green fw-700">
+                                    <div class="custom-svg">
+                                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.4"
+                                                d="m223.883 146.531c-15.165 5.883-19.374 25.531-7.801 37.113 21.169 21.181 10.445 10.451 59.308 59.346 15.853 15.853 41.546 15.904 57.45 0 35.895-35.919 22.625-22.641 59.308-59.346 14.206-14.215 4.173-38.644-16.012-38.644h-25.036c0-7.81-.003-88.185-.003-96 0-17.645-14.355-32-32-32h-29.972c-17.64 0-31.99 14.351-31.99 31.99 0 68.282-.005-43.89-.005 96.01-26.429 0-27.986-.508-33.247 1.531z">
+                                            </path>
+                                            <path
+                                                d="m497 401.667c-415.684 0-397.149.077-397.175-.139-4.556-36.483-4.373-34.149-4.076-34.193 199.47-1.037-277.492.065 368.071.065 26.9 0 47.18-20.38 47.18-47.4v-203.25c0-19.7-16.03-35.76-35.72-35.79l-94.18-.16v34.43c44.176 4.141 63.773 58.096 32.27 89.62l-59.31 59.34c-27.597 27.617-72.286 27.624-99.89 0l-59.31-59.34c-31.488-31.509-11.918-85.478 32.27-89.62v-34.7l-103.205-.178-9.985-54.992c-2.668-14.694-15.444-25.36-30.379-25.36h-68.561c-8.284 0-15 6.716-15 15s6.716 15 15 15h68.561c3.29 0 34.7 206.398 50.441 307.135l-38.388.2c-18.027.069-32.06 15.893-29.81 33.899l4.252 34.016c1.883 15.06 14.748 26.417 29.925 26.417h26.619c-18.8 36.504 7.827 80.333 49.067 80.333 41.221 0 67.876-43.813 49.067-80.333h142.866c-18.801 36.504 7.827 80.333 49.067 80.333 41.22 0 67.875-43.811 49.066-80.333h31.267c8.284 0 15-6.716 15-15s-6.716-15-15-15z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <span class="user-alert-cart">{{cart_data.total_cart}}</span>
+                                </a>
+
+
+                                <div class="cart-detail-box">
+                                    <div class="card">
+                                        <div class="card-header padding-20">
+                                            Your Cart Items
+
+                                        </div>
+                                        <div class="card-body no-padding">
+                                            {% for cart in cart_data.cart %}
+                                            <div class="cat-product-box">
+                                                <div class="cat-product">
+                                                    <div class="cat-name">
+                                                            <p class="text-light-green mb-0">
+                                                                {{cart.Product.Name}} <span class="text-dark-white">x {{cart.Quantity}}</span>
+                                                            </p>
+                                                            <span class="text-light-white">{{cart.Product.Unit}}</span>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span class="text-dark-white fw-500">
+                                                            <strong><i class="fa fa-rupee-sign"></i>
+                                                                {{cart.Total}}</strong>
+
+                                                            </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {% endfor %}
+                                            <div class="item-total">
+                                                <div class="total-price border-0"> <span
+                                                        class="text-dark-white fw-700">Total:</span>
+                                                    <span class="text-dark-white fw-700"><i
+                                                            class="fa fa-rupee-sign"></i> {{cart_data.total_cart_amount}}</span>
+                                                </div>
+
+                                                <div class="card-footer padding-15"> <a href="{% url 'order_page' %}"
+                                                        class="btn-first green-btn text-custom-white full-width fw-500">Proceed
+                                                        to
+                                                        Checkout</a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- user cart -->
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 mobile-search">
+                        <div class="mobile-address">
+                            <a href="#" class="delivery-add" data-toggle="modal" data-target="#address-box"> <span
+                                    class="address">Brooklyn, NY</span>
+                            </a>
+                        </div>
+                        <div class="sorting-addressbox"> <span class="full-address text-light-green">Brooklyn, NY
+                                10041</span>
+                            <div class="btns">
+                                <div class="filter-btn">
+                                    <button type="button">
+                                        <span class="custom-svg">
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                xml:space="preserve">
+                                                <path opacity="0.4" d="M267.998,125.671L177.997,5.669c-5.654-7.559-18.34-7.559-23.994,0L64.002,125.671
+                        c-7.399,9.844-0.355,23.994,11.997,23.994h45.001v285.003c0,8.291,6.709,15,15,15H196c8.291,0,14.8-6.709,14.8-15V149.665h45.2
+                        C268.363,149.665,275.389,135.505,267.998,125.671z"></path>
+                                                <path d="M436.003,362.005h-45.201V77.001c0-8.291-6.509-15-14.8-15h-60.001c-8.291,0-15,6.709-15,15v285.003h-45.001
+                        c-12.353,0-19.396,14.15-11.997,23.994L334.005,506c5.989,8.006,18.014,7.994,23.994,0L448,385.999
+                        C455.391,376.165,448.365,362.005,436.003,362.005z"></path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-light-green">Sort</span>
+                                    </button>
+                                </div>
+                                <div class="filter-btn">
+                                    <button type="button">
+                                        <span class="custom-svg">
+                                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path opacity="0.4"
+                                                    d="m187.304 252.717c8.045 11.642 5.64 1.941 5.64 233.997 0 20.766 23.692 32.651 40.39 20.23 71.353-53.797 85.609-58.456 85.609-83.619 0-169.104-1.971-159.594 5.64-170.608l115.869-157.718h-369.016z">
+                                                </path>
+                                                <path
+                                                    d="m484.221 12.86c-4.14-7.93-12.26-12.86-21.199-12.86h-414.156c-19.305 0-30.664 21.777-19.59 37.6.091.152-1.257-1.693 20.12 27.4h413.095c18.217-24.793 30.394-35.505 21.73-52.14z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                        <span class="text-light-green">Filter</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </header>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+    {% block alert %}
+    <div class="alert alert-{{msg_data.type}} alert-dismissible fade {{msg_data.display}}" role="alert"
+        style="width:max-content;position: fixed;z-index: 1111;bottom: 1em;right:1em;">
+        <strong>{{msg_data.name}}!</strong>
+        <m>{{msg_data.msg}}</m> {% if msg_data.help_link %} <a class='alert-link' target="_blank"
+            href='{{msg_data.help_link}}'>Get help.</a> {% endif %}
+        <div type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </div>
+    </div>
+    {% endblock %}
+
+
+    <!-- Icons Start -->
+    <div class="footer-top section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-20">
+                    <div class="icon-box"> <span><i class="text-light-green flaticon-credit-card-1"></i></span>
+                        <i class="text-light-green flaticon-credit-card-1 icon-overlay"></i>
+                        <h5>100% Payment<br>Secured</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-20">
+                    <div class="icon-box"> <span><i class="text-light-green flaticon-help"></i></span>
+                        <i class="text-light-green flaticon-help icon-overlay"></i>
+                        <h5>24 hours / 7 days<br>Support</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-20">
+                    <div class="icon-box"> <span><i class="text-light-green flaticon-truck"></i></span>
+                        <i class="text-light-green flaticon-truck icon-overlay"></i>
+                        <h5>Free Delivery<br>with $50</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-20">
+                    <div class="icon-box"> <span><i class="text-light-green flaticon-guarantee"></i></span>
+                        <i class="text-light-green flaticon-guarantee icon-overlay"></i>
+                        <h5>Best Price<br>Guaranteed</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Icons End -->
+    <!-- Instagram Start -->
+    <div class="instagram-slider swiper-container">
+        <ul class="hm-list hm-instagram swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/flower1.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/carrot5.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/radish6.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/bitter8.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/chemical3.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/sag4.jpg' %}" alt="instagram"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/bambusha7.jpg' %}" alt="instagram"></a>
+            </li>
+
+            <li class="swiper-slide">
+                <a href="#"><img src="{% static '/img/farms/250x200/cutter9.jpg' %}" alt="instagram"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Instagram End -->
+
+
+    <!-- Footer Start -->
+    <footer class="bg-light-green foot-style-2">
+        <div class="section-padding pt-0 u-line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-contact">
+                            <h6 class="text-light-orange">Need Help</h6>
+                            <ul>
+                                <li><span class="text-light-orange fw-600">Call Us</span> <a href="tel:"
+                                        class="text-light-orange">+(91) 8340738572</a>
+                                </li>
+                                <li><span class="text-light-orange fw-600">Email Us</span> <a href="mailto:"
+                                        class="text-light-orange">niranjankumar8578@gmail.com</a>
+                                </li>
+                                <li><span class="text-light-orange fw-600">Join our twitter</span> <a href="#"
+                                        class="text-light-orange">@seedsfarming</a>
+                                </li>
+                                <li><span class="text-light-orange fw-600">Follow us on Instagram</span> <a href="#"
+                                        class="text-light-orange">@farming</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h6 class="text-light-orange">Get to Know Us</h6>
+                            <ul>
+                                <li><a href="#" class="text-light-orange">About Us</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Vegitable seeds</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Flower seeds</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Hybrid seeds</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Chemical fertilizers</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h6 class="text-light-orange">Let Us Help You</h6>
+                            <ul>
+                                <li><a href="#" class="text-light-orange">Account Details</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Order History</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Find farm</a>
+                                </li>
+                                <li><a href="{% url 'login_page' %}" class="text-light-orange">Login</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Track order</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h6 class="text-light-orange">Doing Business</h6>
+                            <ul>
+                                <li><a href="#" class="text-light-orange">Suggest an Idea</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Be a Partner farm</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Create an Account</a>
+                                </li>
+                                <li><a href="#" class="text-light-orange">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-links">
+                            <h6 class="text-light-orange">Download Apps</h6>
+                            <div class="footer-buttons">
+                                <a class="btn-second light" href="#">
+                                    <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.442px"
+                                        height="22.781px" viewBox="0 0 20.442 22.781"
+                                        enable-background="new 0 0 20.442 22.781" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.332,0.031c0.141,0.017,0.283,0.033,0.422,0.052c0.36,0.049,0.67,0.205,0.911,0.471c0.374,0.411,0.74,0.832,1.09,1.263c2.234,2.755,4.463,5.513,6.693,8.271c0.347,0.43,0.687,0.867,1.037,1.312c-0.062,0.079-0.116,0.157-0.176,0.231c-1.816,2.267-3.628,4.537-5.452,6.798c-0.947,1.174-1.917,2.329-2.876,3.493c-0.101,0.121-0.216,0.231-0.322,0.351c-0.26,0.291-0.596,0.429-0.974,0.487c-0.026,0.003-0.05,0.015-0.076,0.021c-0.14,0-0.278,0-0.417,0c-0.018-0.007-0.034-0.02-0.052-0.021c-0.303-0.04-0.551-0.181-0.722-0.435c-0.118-0.174-0.224-0.361-0.318-0.551c-0.045-0.092-0.075-0.203-0.075-0.307C0.022,14.804,0.024,8.14,0.018,1.476c0-0.279,0.053-0.523,0.206-0.752c0.191-0.289,0.393-0.564,0.736-0.692C1.083,0.031,1.208,0.031,1.332,0.031z">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.425,11.381c-0.027,0.521-0.245,0.977-0.688,1.275c-1.129,0.76-2.305,1.445-3.5,2.095c-0.186,0.103-0.149,0.103-0.272-0.047c-0.876-1.063-1.75-2.128-2.626-3.19c-0.076-0.092-0.083-0.161-0.004-0.258c0.884-1.085,1.766-2.172,2.645-3.263c0.071-0.087,0.131-0.088,0.224-0.039c1.183,0.657,2.352,1.339,3.48,2.086C20.147,10.347,20.41,10.79,20.425,11.381z">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.862,21.059c0.021-0.03,0.04-0.062,0.063-0.092c2.205-2.713,4.41-5.426,6.619-8.137c0.152-0.188,0.326-0.362,0.498-0.534c0.112-0.112,0.142-0.104,0.238,0.017c0.692,0.861,1.385,1.724,2.075,2.59c0.087,0.105,0.156,0.229,0.232,0.346c0.063,0.094,0.05,0.159-0.057,0.222c-0.745,0.436-1.483,0.88-2.229,1.313c-2.38,1.387-4.763,2.771-7.145,4.157c-0.091,0.053-0.185,0.097-0.277,0.146C4.874,21.076,4.867,21.067,4.862,21.059z">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.945,1.791c0.104,0.054,0.211,0.103,0.313,0.162c1.085,0.629,2.174,1.258,3.255,1.895c1.84,1.086,3.677,2.177,5.515,3.267c0.219,0.13,0.427,0.276,0.67,0.433c-0.863,1.073-1.712,2.129-2.58,3.208c-2.41-2.982-4.808-5.951-7.207-8.92C4.923,1.818,4.934,1.806,4.945,1.791z">
+                                        </path>
+                                    </svg>
+                                    <span>Google Play</span>
+                                </a>
+                                <a class="btn-second light" href="#">
+                                    <svg class="custom-svg" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.209px"
+                                        height="22.781px" viewBox="0 0 19.209 22.781"
+                                        enable-background="new 0 0 19.209 22.781" xml:space="preserve">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18.569,7.673c-1.768,1.091-2.674,2.637-2.519,4.71c0.155,2.061,1.319,3.423,3.159,4.341c-0.229,0.537-0.435,1.068-0.68,1.578c-0.588,1.237-1.377,2.338-2.313,3.335c-1.033,1.103-2.255,1.382-3.67,0.843c-0.484-0.184-0.976-0.354-1.477-0.491c-0.977-0.266-1.927-0.104-2.858,0.235c-0.361,0.134-0.724,0.266-1.09,0.39c-1.023,0.351-1.94,0.146-2.756-0.547c-1.027-0.878-1.813-1.953-2.478-3.113c-1.338-2.34-2.065-4.845-1.848-7.564c0.217-2.738,1.847-5.042,4.468-5.77c1.16-0.319,2.259-0.136,3.361,0.26C10,6.645,9.504,6.635,11.598,5.87c1.816-0.662,3.57-0.646,5.288,0.269C17.563,6.498,18.121,6.997,18.569,7.673z">
+                                        </path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.333,0c0.389,2.578-2.298,5.646-4.65,5.352C8.993,3.262,11.766,0.059,14.333,0z">
+                                        </path>
+                                    </svg>
+                                    <span>App Store</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer-contact">
+                            <h6 class="text-light-orange">Newsletter</h6>
+                            <p class="text-white mb-xl-20">Vivamus magna justo, lacinia eget consectetur sed,
+                                convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+                            <form class="subscribe_form">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-submit"
+                                        placeholder="Email Address" value="">
+                                    <div class="input-group-append">
+                                        <button class="btn-second btn-submit full-width" type="button"><i
+                                                class="fas fa-paper-plane"></i> Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright bg-light-green">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="payment-logo mb-md-20">
+                            <div class="payemt-icon">
+                                <img src="{% static 'img/footer-bottom-img.png'%}" alt="#">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-lg-4 col-lg-4">
+                        <div class="copyright-text"> <span class="text-light-orange">© <a href="#"
+                                    class="text-light-orange">Copyright</a> - 2020 | All Right Reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Footer End -->
+    <!-- Address Modal Start -->
+    <div class="modal fade" id="address-box">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title fw-700">Change Address</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="location-picker">
+                        <input type="text" class="form-control" placeholder="Enter a new address">
+                    </div>
+                    <div class="search-results">
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Brooklyn, NY 10041</h6>
+                                <span>Added: January 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Connecticut, NY 10041</h6>
+                                <span>Added: January 31, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Malibou, NY 10041</h6>
+                                <span>Added: February 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Florida, NY 10041</h6>
+                                <span>Added: January 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>CA, NY 10041</h6>
+                                <span>Added: June 04, 2020</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Address Modal End -->
+    <!-- Search Modal Start -->
+    <div class="modal fade" id="search-box">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title fw-700">Search</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="search-box p-relative full-width">
+                        <input type="text" class="form-control" placeholder="Sativa, Indica, Hybride">
+                    </div>
+                    <div class="search-results">
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Exploring cannabis</h6>
+                                <span>January 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Weed is becoming legal</h6>
+                                <span>January 31, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>How to get into weed</h6>
+                                <span>February 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Exploring cannabis</h6>
+                                <span>January 24, 2020</span>
+                            </div>
+                        </a>
+                        <a href="#" class="search-result">
+                            <i class="fas fa-history"></i>
+                            <div class="search-result-inner">
+                                <h6>Weed is becoming legal</h6>
+                                <span>June 04, 2020</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal End -->
+    <!-- Place all Scripts Here -->
+    <!-- jQuery -->
+    <script src="{% static '/js/jquery.min.js' %}"></script>
+    <!-- Jquery 2 -->
+    <script src="{% static '/js/jquery-1.12.4.min.js'%}"></script>
+    <!-- Popper -->
+    <script src="{% static '/js/popper.min.js'%}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static '/js/bootstrap.min.js'%}"></script>
+    <!-- Range Slider -->
+    <script src="{% static '/js/ion.rangeSlider.min.js'%}"></script>
+    <!-- Swiper Slider -->
+    <script src="{% static '/js/swiper.min.js'%}"></script>
+    <!-- Pogo Slider -->
+    <script src="{% static '/js/jquery.pogo-slider.js'%}"></script>
+    <!-- Nice Select -->
+    <script src="{% static '/js/jquery.nice-select.min.js'%}"></script>
+    <!-- magnific popup -->
+    <script src="{% static '/js/jquery.magnific-popup.min.js'%}"></script>
+    <!-- Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
+    <!-- Wow js -->
+    <script src="{% static '/js/wow.min.js'%}"></script>
+    <!-- sticky sidebar -->
+    <script src="{% static '/js/sticksy.js'%}"></script>
+    <!-- Slick Slider -->
+    <script src="{% static '/js/slick.min.js'%}"></script>
+    <!--====== inview js ======-->
+    <script src="{% static '/js/jquery.inview.min.js'%}"></script>
+    <!--====== counterup js ======-->
+    <script src="{% static '/js/jquery.countTo.js'%}"></script>
+    <!--====== easypiechart js ======-->
+    <script src="{% static '/js/jquery.easypiechart.js'%}"></script>
+    <!-- organza Js -->
+    <script src="{% static '/js/Weedo.js'%}"></script>
+    <!-- /Place all Scripts Here -->
+    <script src="{% static '/js/file.js'%}"></script>
+    <!-- /Place all Scripts Here -->
+
+
+    <script>
+        // JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        $(document).ready(function () {
+
+
+        });
+    </script>
+
+    {% block scripts %}
+
+    {% endblock %}
+
+</body>
+
+</html>

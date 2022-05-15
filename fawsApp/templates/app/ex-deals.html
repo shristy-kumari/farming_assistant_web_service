@@ -1,0 +1,497 @@
+
+{% extends 'base.html' %}
+{% load  static %}
+{% block content %}
+ 
+    <!-- Navigation End -->
+    <!-- Inner-Intro -->
+    <div id="inner_header_about" class="section-padding herrer-breadcrumbs">
+        <div class="overlay overlay-bg"></div>
+        <div class="container">
+            <div class="inner_intro">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'shop_page' %}">Buy Seeds</a></li>
+                        <li class="breadcrumb-item active">Save Seeds</li>
+                    </ul>
+                </nav>
+                <h1 class="no-margin">Ex Deals</h1>
+            </div>
+        </div>
+    </div>
+    <!-- exclusive deals -->
+    <section class="section-padding-top exclusive-deals">
+        <div class="container">
+            <div class="row section-padding-bottom">
+                <div class="col-md-7 align-self-center">
+                    <div class="title">
+                        <div class="deals-heading">
+                            <h2 class="text-light-black fw-700">Discover exclusive deals with Perks</h2>
+                            <p class="text-light-black">Weedo deals, coupons, promos, and more</p>
+                            <a href="ex-deals.html" class="btn-second btn-submit">View Deals</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="deals-image">
+                        <img src="{% static '/img/deals/banner-1.jpg ' %}" class="img-fluid full-width" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- exclusive deals -->
+    <!-- Featured partners -->
+    <section class="featured-partners section-padding-top bg-light-orange">
+        <div class="container">
+            <div class="row section-padding-bottom">
+                <div class="col-12">
+                    <div class="section-header-left">
+                        <h3 class="text-light-black header-title">Featured partners</h3>
+                        <p class="text-light-black">Get exclusive deals and free food</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="kosher-delivery-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-box-3">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/farms/604x240/shop-5.jpg ' %}" class="img-fluid full-width" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="product-caption">
+                                        <h5><a href="#" class="text-light-black">Hybrid</a></h5>
+                                        <ul class="food-type">
+                                            <li class="text-light-white">$</li>
+                                            <li class="text-light-white">Happy</li>
+                                            <li class="text-light-white">Pain Relief</li>
+                                            <li class="text-light-white">Vorierty</li>
+                                        </ul>
+                                        <ul class="food-description">
+                                            <li class="text-light-black">Delivery</li>
+                                            <li class="text-light-black">4.2 <i class="fas fa-star text-yellow"></i> (200+)</li>
+                                            <li class="text-light-black">$2.99 Delivery Fee</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box-3">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/farms/604x240/shop-6.jpg ' %}" class="img-fluid full-width" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="product-caption">
+                                        <h5><a href="#" class="text-light-black">Vegitable seeds</a></h5>
+                                        <ul class="food-type">
+                                            <li class="text-light-white">$</li>
+                                            <li class="text-light-white">Mildness</li>
+                                            <li class="text-light-white">Relaxation</li>
+                                            <li class="text-light-white">Earthy</li>
+                                        </ul>
+                                        <ul class="food-description">
+                                            <li class="text-light-black">Delivery</li>
+                                            <li class="text-light-black">4.2 <i class="fas fa-star text-yellow"></i> (200+)</li>
+                                            <li class="text-light-black">$2.99 Delivery Fee</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box-3">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/farms/604x240/shop-7.jpg ' %}" class="img-fluid full-width" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="product-caption">
+                                        <h5><a href="#" class="text-light-black">Flower seeds</a></h5>
+                                        <ul class="food-type">
+                                            <li class="text-light-white">$</li>
+                                            <li class="text-light-white">Unlifted</li>
+                                            <li class="text-light-white">Improves Mood</li>
+                                            <li class="text-light-white">Euphoric</li>
+                                        </ul>
+                                        <ul class="food-description">
+                                            <li class="text-light-black">Delivery</li>
+                                            <li class="text-light-black">4.2 <i class="fas fa-star text-yellow"></i> (200+)</li>
+                                            <li class="text-light-black">$2.99 Delivery Fee</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box-3">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/farms/604x240/shop-8.jpg ' %}" class="img-fluid full-width" alt="#">
+                                        </a>
+                                    </div>
+                                    <div class="product-caption">
+                                        <h5><a href="#" class="text-light-black">Fruits seeds</a></h5>
+                                        <ul class="food-type">
+                                            <li class="text-light-white">$</li>
+                                            <li class="text-light-white">Happy</li>
+                                            <li class="text-light-white">Removes Headache</li>
+                                            <li class="text-light-white">Vorierty</li>
+                                        </ul>
+                                        <ul class="food-description">
+                                            <li class="text-light-black">Delivery</li>
+                                            <li class="text-light-black">4.2 <i class="fas fa-star text-yellow"></i> (200+)</li>
+                                            <li class="text-light-black">$2.99 Delivery Fee</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured partners -->
+    <!-- trending -->
+    <section class="trending section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header-left">
+                        <h3 class="text-light-black header-title">Trending near you</h3>
+                        <p class="text-light-black">Explore deals at the most popular spots</p>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    {% for i in all_products %}
+                    <div class="trending-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{{ i.Image.url }}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> 
+                                                <div class="custom-tag"> <span class="text-custom-white rectangle-tag">
+                                                        10% Off
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                        <div class="product-caption">
+                                            <span class="product-strain sativa" data-toggle="tooltip" title="Seeds"></span>
+                                            <p class="text-light-white">25% C&DC - 0.1% COD</p>
+                                            <div class="product-title">
+                                                <h8 class="card-title">{{ i.Categories }}</h8>
+                                                <h6 class="card-title">{{ i.Name }}</h6>
+                                                <span class="card-text">Price - {{ i.Price }}
+                                                    <span class="card-text">- ({{ i.Unit }})</span>
+                                                </span>
+                                            </div>
+                                        
+                                        <div class="product-footer">
+                                            <a href="{% url 'add_to_cart' pk=i.id %}" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trending -->
+    <!-- fresh deals -->
+    <section class="fresh-deals section-padding bg-light-orange">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header-left">
+                        <h3 class="text-light-black header-title">Fresh deals nearby</h3>
+                        <p class="text-light-black">Find new farms with deals near you</p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="fresh-deals-slider swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-1.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                                <div class="custom-tag"> <span class="text-custom-white rectangle-tag">
+                                                        10% Off
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain indica" data-toggle="tooltip" title="Indica"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Wild Mix</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                                <span class="strike">$350.00</span>
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-2.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                                <div class="custom-tag"> <span class="text-custom-white rectangle-tag">
+                                                        20% Off
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain indica" data-toggle="tooltip" title="Indica"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Bloom Ghost</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                                <span class="strike">$350.00</span>
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-3.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                                <span class="type-tag bg-orange text-custom-white">
+                                                    Trending
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain hybrid" data-toggle="tooltip" title="Hybrid"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Florida Silk</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-4.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                                <div class="custom-tag"> <span class="text-custom-white rectangle-tag">
+                                                        15% Off
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain sativa" data-toggle="tooltip" title="Sativa"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Juicy Mix</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                                <span class="strike">$350.00</span>
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-5.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain sativa" data-toggle="tooltip" title="Sativa"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Cool Ket</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-box">
+                                    <div class="product-img">
+                                        <a href="#">
+                                            <img src="{% static '/img/product-card/pr-6.jpg ' %}" class="img-fluid full-width" alt="product-img">
+                                        </a>
+                                        <div class="overlay">
+                                            <div class="product-tags padding-10"> <span class="circle-tag">
+                                                    <img src="{% static '/img/svg/013-heart-1.svg" alt="tag">
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-caption">
+                                        <span class="product-strain indica" data-toggle="tooltip" title="Indica"></span>
+                                        <p class="text-light-white">25% THC - 0.1% CBD</p>
+                                        <div class="product-title">
+                                            <h6><a href="product-details.html">Blue Dream</a></h6>
+                                            <span class="price">
+                                                $250.00
+                                            </span>
+                                        </div>
+                                        <div class="product-details">
+                                            <div class="product-rating">
+                                                <span>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                    <i class="fas fa-star text-yellow"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-footer">
+                                            <a href="#" class="btn-second btn-submit full-width btn-sm">Add to Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fresh deals -->
+   
+    
+    {% endblock %}

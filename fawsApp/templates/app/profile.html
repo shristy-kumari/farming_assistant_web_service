@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="register-restaurent-sec section-padding">
+    <div class="container">
+        <div id="add-restaurent-tab" class="step-app">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 mb-md-40">
+                    <div class="form-group wrap-custom-file">
+                        <form method="POST" action="{% url 'upload_profile' %}" onchange="this.submit()" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <input class="form-control" type="file" name="user_image" id="user_image" accept=".jpg, .png">
+                            {% if profile_data.Image %}
+                            <label for="user_image">
+                                {% else %}
+                                <label for="user_image">
+                                    {% endif %}
+                                    <span><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <i class="icon-add fa fa-plus-circle"></i>
+                                    <i class="icon-edit fa fa-edit d-none"></i>
+                                </label>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="col-xl-9 col-lg-9">
+                    {% with "app/"|add:user_role|add:"_content.html" as profile_template %}
+                    {% include profile_template %}
+                    {% endwith %}
+
+                    {% block profile_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // When a new file is selected
+var setImage = function(input_ele, tmppath) {
+  
+  console.table(tmppath)
+  //Check successfully selection
+  
+  var $label = input_ele.next('label');
+  $labelText = $label.find('span'),
+  $add = $label.find('.icon-add'),
+  $edit = $label.find('.icon-edit')
+  labelDefault = $labelText.text();
+  
+  if (tmppath) {
+    $label.addClass('file-ok').css('background-image', 'url(' + tmppath + ')');
+    $add.addClass('d-none')
+    $edit.addClass('p-1').removeClass('d-none').css('background-color', '#000000b0')
+    //$labelText.text('change');
+    $labelText.addClass('d-none');
+  } else {
+    $label.removeClass('file-ok');
+    $add.removeClass('d-none')
+    $edit.addClass('d-none')
+    $labelText.text(labelDefault).removeClass('d-none');
+  }
+}
+
+{% if has_profile_image %}
+
+setImage($('input[name="user_image"]'), '{{profile_data.Image.url}}')
+
+{% endif %}
+$('input[type="file"]').each(function () {
+  var input_ele = $(this)
+  input_ele.on('change', function (event) {
+  // Refs
+  var $input_image = $(this),
+  $label = $input_image.next('label'),
+  $labelText = $label.find('span'),
+  $add = $label.find('.icon-add'),
+  $edit = $label.find('.icon-edit')
+  labelDefault = $labelText.text();
+
+  var fileName = $input_image.val().split('\\').pop(),
+  tmppath = URL.createObjectURL(event.target.files[0]);
+  setImage(input_ele, tmppath)
+  });
+});
+    // set gender according to user profile_data
+
+    var gender = $('form select[name="gender"]').find('option.{{profile_data.Gender}}');
+
+    //alert($(user_gender).val())
+    $(gender).attr('selected', '')
+
+</script>
+{% endblock %}

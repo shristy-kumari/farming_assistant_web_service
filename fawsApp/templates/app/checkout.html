@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- Inner-Intro -->
+<div id="inner_header_about" class="section-padding herrer-breadcrumbs">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="inner_intro">
+            <nav class="breadcrumb">
+                <ul>
+                    <li class="breadcrumb-item"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% url 'shop_page' %}">Shop</a></li>
+                    <li class="breadcrumb-item active">Checkout</li>
+                </ul>
+            </nav>
+            <h1 class="no-margin">Checkout</h1>
+        </div>
+    </div>
+</div>
+<section class="final-order section-padding bg-light-theme">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="sidebar">
+                    <div class="cart-detail-box main-box">
+                        <div class="card">
+                            <div class="section-header-left card-header no-padding padding-30">
+                                <h3 class="text-light-black header-title fw-700">Review and place order</h3>
+                            </div>
+                            <div class="card-body no-padding" id="scrollstyle-4">
+                                <table class="table responsive-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Image</th>
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <div class="cat-product-box">
+                                    <div class="cat-product">
+                                        <div class="cat-name">
+                                            <a href="#">
+                                                <p class="text-light-green fw-700"><span class="text-dark-white">1x
+                                                    </span>
+                                                    Blue
+                                                    dream sativa</p> <span class="text-light-white fw-700">small, Blue
+                                                    dream</span>
+                                            </a>
+                                        </div>
+                                        <div class="price"> <a href="#" class="text-dark-white fw-500">
+                                                $2.25
+                                            </a>
+                                        </div>
+                                        <div class="delete-btn">
+                                            <a href="#" class="text-dark-white"> <i class="far fa-trash-alt"></i> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-total">
+                                    <div class="total-price border-0"> <span class="text-dark-white fw-700">Items
+                                            subtotal:</span>
+                                        <span class="text-dark-white fw-700">$9.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="main-box padding-30">
+                    <div class="section-header-left">
+                        <h3 class="text-light-black header-title fw-700">Review and place order</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+{% endblock %}
